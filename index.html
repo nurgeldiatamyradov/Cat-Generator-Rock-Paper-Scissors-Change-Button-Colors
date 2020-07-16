@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css"> 
+    <title>JavaScript on steroids</title>
+
+</head>
+
+<body>
+  <div class="container-1">
+   <h2> Challenge 1: Your Age İn Days</h2>
+  <div class="flex-box-container-1">
+  <div>
+      <button class="btn btn-primary" onclick="ageInDays()">Click Me</button>
+   </div>
+  <div>
+ <button class="btn btn-danger" onclick="reset()">Reset</button>
+</div>
+</div>
+</div>
+ 
+<div class="flex-box-container-1">
+ <div id="flex-box-result">
+
+ </div>
+</div>
+
+<div class="container-2">
+<h2>Challenge 2: Cat Generator</h2>
+
+
+  <button class="btn btn-success" id="cat-generator" onclick="generateCat()">Generate Cat</button>
+
+
+
+  <div class="flex-box-container-2" id="flex-cat-gen">
+    
+     
+  </div>
+</div>
+
+<div class="container-3">
+  <h2>Challenge 3: Rock, Paper, Scissors
+  </h2>
+  <div class="flex-box-rps" id="flex-box-rps-div">
+    <img id="rock" src="https://www.seekpng.com/png/detail/816-8161371_rock-paper-scissor-icon-png.png" height="150" width="150" alt="" onclick="rpsGame(this)">
+    <img id="paper" src="https://unvegetariano.com/images/rock-paper-scissors-clipart-8.png" height="150" width="150" alt="" onclick="rpsGame(this)">
+    <img id="scissor" src="https://unvegetariano.com/images/rock-paper-scissors-clipart-9.png" height="150" width="150" alt="" onclick="rpsGame(this)">
+  </div>
+</div>
+
+<div class="container-4">
+  <h2> Challenge 3: Change The Color Of All Buttons</h2>
+  <div class="flex-box-pick-color">
+    <form action="">
+      <select name="backdrop" id="bacground" onchange="buttonColorChange(this)">
+      <option value="random">Random</option>
+      <option value="red">Red</option>
+      <option value="green">Green</option>
+      <option value="reset">Reset</option>
+      </select>
+    </form>
+    <button class="btn btn-primary">Wwee!</button>
+    <button class="btn btn-danger">Yahoo!</button>
+    <button class="btn btn-warning">google!</button>
+    <button class="btn btn-success">Facebook!</button>
+  </div>
+</div>
+
+   <script src="./script.js"></script>
+
+</body>
+</html>
